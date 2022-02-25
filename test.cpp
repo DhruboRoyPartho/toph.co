@@ -25,7 +25,7 @@ int main()
     str num1,num2;
     cin >> n;
     while(n--){
-        ch rev1[1500]={0},rev2[1500]={0};
+        ch rev1[10500]={0},rev2[10500]={0};
         ll m1=0,m2=0;
         cin >> num1 >> num2;
         for(i=0;i<=num1[i];i++){}   // length calculating of num1
@@ -49,9 +49,9 @@ int main()
             m2 = m2*10+(rev2[k] - '0');
         }
         // cout << m1 << " " << m2 << endl;     //For debug
-        if(m1 > m2) cout << rev1 << " > " << rev2 << endl;
-        else if(m1 < m2) cout << rev1 << " < " << rev2 << endl;
-        else cout << rev1 << " = " << rev2 << endl;
+        if(m1 > m2) cout << num1 << " > " << num2 << endl;
+        else if(m1 < m2) cout << num1 << " < " << num2 << endl;
+        else cout << num1 << " = " << num2 << endl;
     }
     return 0;
 }
